@@ -32,7 +32,7 @@ bitflags! {
     /// You should see the [Words of Wisdom] in the original document
     ///
     /// [Words of Wisdom]: http://www.fftw.org/fftw3_doc/Words-of-Wisdom_002dSaving-Plans.html
-    #[derive(Default)]
+    #[derive(Default, Clone, Copy)]
     pub struct Flag: u32 {
         const MEASURE = 0;
         const DESTROYINPUT = 1 ;
